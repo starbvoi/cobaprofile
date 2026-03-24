@@ -4,530 +4,562 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light only">
-  <meta name="theme-color" content="#2b0000">
+  <meta name="theme-color" content="#000000">
 
-  <title>HYBETTER</title>
+  <title>DANIEL ARTAJUNA PROFILE</title>
 
-  <!-- SEO -->
-  <meta name="description" content="HYBETTER music community" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="HYBETTER" />
+  <meta name="description" content="DANIEL ARTAJUNA PROFILE" />
+  <meta property="og:title" content="DANIEL ARTAJUNA" />
   <meta property="og:description" content="" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://starbvoi.github.io/hybetter/" />
   <meta property="og:image" content="https://starbvoi.github.io/hybetter/preview.png" />
-
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HYBETTER" />
+  <meta name="twitter:title" content="DANIEL ARTAJUNA" />
   <meta name="twitter:description" content="" />
   <meta name="twitter:image" content="https://starbvoi.github.io/hybetter/preview.png" />
-  <title>HYBETTER</title>
 
-<style>
-  :root {
-    color-scheme: light only;
-    --bg-fallback: #2b0000;
-    --white: #ffffff;
-    --black: #000000;
-    --overlay: rgba(0, 0, 0, 0.4);
-    --soft-white: rgba(255, 255, 255, 0.08);
-    --soft-white-border: rgba(255, 255, 255, 0.15);
-    --soft-white-2: rgba(255, 255, 255, 0.2);
-    --popup-bg: #2f3136;
-    --popup-muted: #9c9c9c;
-    --popup-close: #a1a1a1;
-  }
+  <style>
+    :root {
+      color-scheme: light only;
+      --bg-fallback: #000000;
+      --white: #ffffff;
+      --black: #000000;
+      --overlay: rgba(0, 0, 0, 0.08);
+      --soft-white: rgba(255, 255, 255, 0.08);
+      --soft-white-border: rgba(255, 255, 255, 0.18);
+      --soft-white-2: rgba(255, 255, 255, 0.2);
+      --popup-bg: #23252a;
+      --popup-muted: #b0b0b0;
+      --popup-close: #a1a1a1;
+    }
 
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    color-scheme: light only;
-    background-color: var(--bg-fallback) !important;
-    -webkit-text-size-adjust: 100%;
-  }
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      color-scheme: light only;
+      background-color: var(--bg-fallback) !important;
+      -webkit-text-size-adjust: 100%;
+    }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  body {
-    font-family: Arial, sans-serif;
-    overflow-x: hidden;
-    min-height: 100vh;
-    color: var(--white) !important;
-    background-color: var(--bg-fallback) !important;
-    background-image: url("https://raw.githubusercontent.com/starbvoi/hybetter/597409fa538dd8aa1707a703c7df82b0eee52512/background.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+    body {
+      font-family: "Arial Narrow", Arial, sans-serif;
+      overflow-x: hidden;
+      color: var(--white) !important;
+      background: #000000 !important;
+    }
 
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: var(--overlay);
-    z-index: 0;
-    pointer-events: none;
-  }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: var(--overlay);
+      z-index: 0;
+      pointer-events: none;
+    }
 
-  /* =========================
-     LOADING SCREEN
-  ========================= */
-  .loading-screen {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: opacity 0.8s ease;
-  }
+    .loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: opacity 0.8s ease;
+      background: #000000;
+    }
 
-  .logo-container {
-    position: relative;
-    width: 200px;
-    height: 200px;
-  }
+    .logo-container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
 
-  .logo-container::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    filter: blur(20px);
-    z-index: 0;
-    pointer-events: none;
-  }
+    .logo-container::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      filter: blur(20px);
+      z-index: 0;
+      pointer-events: none;
+    }
 
-  .logo {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
-    background: var(--white) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    pointer-events: none;
-  }
+    .logo {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--white) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+    }
 
-  .logo img {
-    width: 110%;
-    height: 110%;
-    object-fit: contain;
-    pointer-events: none;
-  }
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+    }
 
-  .circle-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 240px;
-    height: 240px;
-    transform: translate(-50%, -50%) rotate(0deg);
-    transform-origin: 50% 50%;
-    animation: spinText 10s linear infinite;
-    z-index: 3;
-    pointer-events: none;
-  }
-
-  @keyframes spinText {
-    from {
+    .circle-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 240px;
+      height: 240px;
       transform: translate(-50%, -50%) rotate(0deg);
+      transform-origin: 50% 50%;
+      animation: spinText 10s linear infinite;
+      z-index: 3;
+      pointer-events: none;
     }
-    to {
-      transform: translate(-50%, -50%) rotate(360deg);
+
+    @keyframes spinText {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
     }
-  }
 
-  .loading-bar {
-    margin-top: 40px;
-    width: 250px;
-    height: 6px;
-    background: var(--soft-white-2);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .progress {
-    height: 100%;
-    width: 0%;
-    background: var(--white) !important;
-  }
-
-  .loading-text {
-    margin-top: 10px;
-    font-size: 14px;
-    color: var(--white) !important;
-  }
-
-  .start-btn {
-    display: none;
-    margin-top: 40px;
-    padding: 12px 30px;
-    border: none;
-    background: var(--white) !important;
-    color: var(--black) !important;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 20px;
-    transition: 0.3s;
-    position: relative;
-    z-index: 10000;
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .start-btn:hover {
-    transform: scale(1.1);
-  }
-
-  /* =========================
-     MAIN PAGE
-  ========================= */
-  #mainPage {
-    display: none;
-    position: relative;
-    z-index: 2;
-    min-height: 100vh;
-  }
-
-  .page {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 70px 20px;
-  }
-
-  .frame {
-    width: 100%;
-    max-width: 760px;
-    position: relative;
-  }
-
-  .top-line,
-  .thin-line {
-    width: 100%;
-    height: 2px;
-    background: var(--white) !important;
-  }
-
-  .top-line {
-    margin-bottom: 18px;
-  }
-
-  .thin-line {
-    margin-bottom: 18px;
-  }
-
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: var(--white) !important;
-  }
-
-  .topbar-right {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .lang-switch {
-    user-select: none;
-    font-weight: 800;
-    letter-spacing: 1px;
-    color: var(--white) !important;
-  }
-
-  .lang-switch span {
-    cursor: pointer;
-    opacity: 0.6;
-    transition: 0.2s ease;
-    color: var(--white) !important;
-  }
-
-  .lang-switch span.active {
-    opacity: 1;
-    text-decoration: underline;
-  }
-
-  .music-btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--white) !important;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 1;
-    transition: 0.2s ease;
-    user-select: none;
-    background: transparent !important;
-    color: var(--white) !important;
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .music-btn:hover {
-    transform: scale(1.08);
-  }
-
-  .music-btn.rotating {
-    animation: spinIcon 3s linear infinite;
-  }
-
-  @keyframes spinIcon {
-    from {
-      transform: rotate(0deg);
+    .loading-bar {
+      margin-top: 40px;
+      width: 250px;
+      height: 6px;
+      background: var(--soft-white-2);
+      border-radius: 10px;
+      overflow: hidden;
     }
-    to {
-      transform: rotate(360deg);
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: var(--white) !important;
     }
-  }
 
-  .button-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-
-  .menu-btn {
-    border: none;
-    background: var(--white) !important;
-    color: var(--black) !important;
-    padding: 12px 18px;
-    font-weight: 900;
-    font-size: 15px;
-    text-transform: uppercase;
-    cursor: pointer;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    transition: 0.2s ease;
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .menu-btn:hover {
-    transform: translateY(-2px);
-  }
-
-  .menu-btn.active {
-    position: relative;
-  }
-
-  .menu-btn.active::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 10px solid var(--white);
-  }
-
-  .hero-image {
-    width: 100%;
-    height: 240px;
-    overflow: hidden;
-    margin-bottom: 24px;
-    border: 1px solid var(--soft-white-border);
-    background: var(--soft-white);
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: grayscale(100%);
-    display: block;
-  }
-
-  .content-text {
-    font-size: 18px;
-    line-height: 1.9;
-    letter-spacing: 2px;
-    font-weight: 700;
-    color: var(--white) !important;
-    margin-bottom: 34px;
-    max-width: 100%;
-  }
-
-  .music-popup {
-    position: absolute;
-    top: 52px;
-    right: 0;
-    width: 305px;
-    background: var(--popup-bg) !important;
-    border-radius: 20px;
-    padding: 14px 16px 16px;
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
-    display: none;
-    z-index: 50;
-  }
-
-  .music-popup.show {
-    display: block;
-  }
-
-  .popup-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    gap: 12px;
-  }
-
-  .song-info {
-    min-width: 0;
-  }
-
-  .song-title {
-    font-size: 16px;
-    font-weight: 800;
-    color: var(--white) !important;
-    margin-bottom: 6px;
-    line-height: 1.2;
-  }
-
-  .song-artist {
-    font-size: 13px;
-    color: var(--popup-muted) !important;
-    text-transform: uppercase;
-  }
-
-  .close-popup {
-    background: transparent !important;
-    border: none;
-    color: var(--popup-close) !important;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 1;
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .time-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-
-  .time-label {
-    font-size: 12px;
-    font-weight: 700;
-    width: 34px;
-    text-align: center;
-    color: var(--white) !important;
-  }
-
-  .progress-wrap {
-    flex: 1;
-    height: 6px;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 999px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .progress-fill {
-    width: 0%;
-    height: 100%;
-    background: var(--white) !important;
-    border-radius: 999px;
-  }
-
-  .player-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .player-controls button {
-    background: transparent !important;
-    border: none;
-    color: var(--white) !important;
-    cursor: pointer;
-    font-size: 18px;
-    appearance: none;
-    -webkit-appearance: none;
-  }
-
-  .play-btn {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  @media (max-width: 768px) {
-    .topbar {
+    .loading-text {
+      margin-top: 10px;
       font-size: 14px;
-      gap: 10px;
+      color: var(--white) !important;
+    }
+
+    .start-btn {
+      display: none;
+      margin-top: 40px;
+      padding: 12px 30px;
+      border: none;
+      background: var(--white) !important;
+      color: var(--black) !important;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 20px;
+      transition: 0.3s;
+      position: relative;
+      z-index: 10000;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .start-btn:hover {
+      transform: scale(1.08);
+    }
+
+    #mainPage {
+      display: none;
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 80px 20px 100px;
+    }
+
+    .frame {
+      width: 100%;
+      max-width: 760px;
+      position: relative;
+    }
+
+    .top-line,
+    .thin-line {
+      width: 100%;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .top-line {
+      margin-bottom: 16px;
+    }
+
+    .thin-line {
+      margin-bottom: 26px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 17px;
+      color: var(--white) !important;
     }
 
     .topbar-right {
-      gap: 10px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+    }
+
+    .lang-switch {
+      user-select: none;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: var(--white) !important;
+    }
+
+    .lang-switch span {
+      cursor: pointer;
+      opacity: 0.65;
+      transition: 0.2s ease;
+      color: var(--white) !important;
+    }
+
+    .lang-switch span.active {
+      opacity: 1;
+      text-decoration: none;
     }
 
     .music-btn {
-      width: 34px;
-      height: 34px;
-      font-size: 15px;
+      width: 42px;
+      height: 42px;
+      border: 2px solid var(--white) !important;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+      transition: 0.2s ease;
+      user-select: none;
+      background: transparent !important;
+      color: var(--white) !important;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .music-btn:hover {
+      transform: scale(1.06);
+    }
+
+    .music-btn.rotating {
+      animation: spinIcon 3s linear infinite;
+    }
+
+    @keyframes spinIcon {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     .button-row {
-      gap: 12px;
-      margin-bottom: 28px;
+      display: none;
     }
 
-    .menu-btn {
-      font-size: 13px;
-      padding: 10px 14px;
+    .profile-wrap {
+      width: 100%;
     }
 
-    .hero-image {
-      height: 180px;
+    .intro-text {
+      font-size: 18px;
+      line-height: 1.95;
+      letter-spacing: 1.3px;
+      font-weight: 700;
+      color: var(--white) !important;
+      margin-bottom: 22px;
+      text-align: justify;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-top: 40px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-top: 22px;
+      margin-bottom: 10px;
+      letter-spacing: 0.4px;
+    }
+
+    .hero-image,
+    .extra-image {
+      width: 420px;
+      max-width: 100%;
+      margin: 0 auto 24px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-image img,
+    .extra-image img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      filter: none;
     }
 
     .content-text {
-      font-size: 14px;
-      line-height: 1.8;
-      letter-spacing: 1.5px;
+      font-size: 18px;
+      line-height: 1.9;
+      letter-spacing: 0.9px;
+      font-weight: 700;
+      color: var(--white) !important;
+      margin-bottom: 0;
+      white-space: pre-line;
+      text-align: justify;
+    }
+
+    .quote-text {
+      margin-top: 40px;
+      margin-bottom: 24px; /* tambah jarak ke foto */
+      font-size: 24px;
+      line-height: 1.4;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .desc-text {
+      margin-top: 22px;
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0.35px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+      text-align: justify;
+    }
+
+    .list-block {
+      margin-top: 4px;
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0.35px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.95);
+      text-align: left;
+    }
+
+    .list-block div {
+      margin-bottom: 6px;
     }
 
     .music-popup {
-      width: min(305px, calc(100vw - 40px));
+      position: absolute;
+      top: 52px;
       right: 0;
+      width: 305px;
+      background: var(--popup-bg) !important;
+      border-radius: 20px;
+      padding: 14px 16px 16px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+      display: none;
+      z-index: 50;
     }
-  }
-</style>
+
+    .music-popup.show {
+      display: block;
+    }
+
+    .popup-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      gap: 12px;
+    }
+
+    .song-info {
+      min-width: 0;
+    }
+
+    .song-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--white) !important;
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
+
+    .song-artist {
+      font-size: 13px;
+      color: var(--popup-muted) !important;
+      text-transform: uppercase;
+    }
+
+    .close-popup {
+      background: transparent !important;
+      border: none;
+      color: var(--popup-close) !important;
+      font-size: 18px;
+      cursor: pointer;
+      line-height: 1;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .time-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .time-label {
+      font-size: 12px;
+      font-weight: 700;
+      width: 34px;
+      text-align: center;
+      color: var(--white) !important;
+    }
+
+    .progress-wrap {
+      flex: 1;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--white) !important;
+      border-radius: 999px;
+    }
+
+    .player-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .player-controls button {
+      background: transparent !important;
+      border: none;
+      color: var(--white) !important;
+      cursor: pointer;
+      font-size: 18px;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .play-btn {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .page {
+        padding: 52px 18px 80px;
+      }
+
+      .frame {
+        max-width: 100%;
+      }
+
+      .topbar {
+        font-size: 14px;
+        gap: 10px;
+      }
+
+      .topbar-right {
+        gap: 10px;
+      }
+
+      .music-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+      }
+
+      .intro-text,
+      .content-text {
+        font-size: 15px;
+        line-height: 1.85;
+        letter-spacing: 0.8px;
+      }
+
+      .section-title {
+        font-size: 18px;
+      }
+
+      .sub-title {
+        font-size: 15px;
+      }
+
+      .quote-text {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 34px;
+        margin-bottom: 20px; /* jarak mobile juga ditambah */
+      }
+
+      .desc-text,
+      .list-block {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+
+      .hero-image,
+      .extra-image {
+        width: 100%;
+      }
+
+      .music-popup {
+        width: min(305px, calc(100vw - 40px));
+        right: 0;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -537,15 +569,15 @@
         <defs>
           <path id="circlePath" d="M150,150 m-140,0 a140,140 0 1,1 280,0 a140,140 0 1,1 -280,0" />
         </defs>
-        <text fill="#ffffff" font-size="14" font-family="Arial" letter-spacing="1.5">
+        <text fill="#ffffff" font-size="14" font-family="Arial" letter-spacing="1.8">
           <textPath href="#circlePath" startOffset="0%">
-            WE BELIEVE IN MUSIC • WE BELIEVE IN MUSIC • WE BELIEVE IN MUSIC • WE BELIEVE IN MUSIC • WE BELIEVE IN MUSIC •
+            CHOI YEONJUN • CHOI YEONJUN • CHOI YEONJUN • CHOI YEONJUN • CHOI YEONJUN • CHOI YEONJUN •
           </textPath>
         </text>
       </svg>
 
       <div class="logo">
-        <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/b5408c73b8add69bcd03af4007fb9525c884a872/Desain%20tanpa%20judul%20(17).png" alt="logo">
+        <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/143739a056247dce725ec3c9f7fa2a451e35ca81/Desain%20tanpa%20judul%20(18).png" alt="logo">
       </div>
     </div>
 
@@ -565,13 +597,12 @@
         <div class="top-line"></div>
 
         <div class="topbar">
-          <div id="siteTitle">HYBETTER EST 2026</div>
+          <div id="siteTitle">DANIEL ARTAJUNA PROFILE</div>
           <div class="topbar-right">
             <div class="lang-switch">
               <span id="lang-ina" class="active">INA</span> |
               <span id="lang-eng">ENG</span>
             </div>
-
             <button class="music-btn" id="musicToggle" type="button">♫</button>
           </div>
         </div>
@@ -602,25 +633,61 @@
 
         <div class="thin-line"></div>
 
-        <div class="button-row">
-          <button class="menu-btn active" id="btnProfile" type="button">PROFILE</button>
-          <button class="menu-btn" id="btnRules" type="button">RULES</button>
-          <button class="menu-btn" id="btnMembers" type="button">MEMBER'S</button>
-          <button class="menu-btn" id="btnJoin" type="button">HOW TO JOIN</button>
-          <button class="menu-btn" id="btnMedia" type="button">MEDIAPARTNER</button>
-        </div>
+        <div class="profile-wrap">
+          <div class="intro-text" id="introText">
+            Choi Yeonjun, a storm of charm with a hint of chaos beneath.
+            You'll find me in that rhythm. Known as Juna, Daniel Artajuna in full.
+            Every step I take is guided by Choi Yeonjun as my muse.
+          </div>
 
-        <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Building">
-        </div>
+          <div class="section-title" id="sectionTitle">CHOI YEONJUN BIOGRAPHY</div>
 
-        <div class="content-text" id="mainText">
-          HYBETTER adalah komunitas musik yang dibangun untuk para kreator, penikmat,
-          dan kolaborator yang ingin berkembang bersama. Kami percaya bahwa musik
-          bukan hanya suara, tetapi juga identitas, energi, dan gerakan budaya yang
-          bisa menyatukan banyak orang dalam satu visi.
-        </div>
+          <div class="hero-image">
+            <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/f69052b863f58b3f5ac9667cac85cbd8751012c4/%23yeonjun%20%23txt%20%23tomorrowxtogether.jpg" alt="Profile Photo">
+          </div>
 
+          <div class="content-text" id="mainText"></div>
+
+          <div class="quote-text" id="quoteText">
+            MY BEST TEAM AND FAMILY FOREVER, TXT
+          </div>
+
+          <div class="extra-image">
+            <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/403d4cd57a8d39b6b94c9fbdd4d77dca07dd703f/download%20(17).jpg" alt="TXT Photo">
+          </div>
+
+          <div class="desc-text" id="descText"></div>
+
+          <div class="section-title" id="discographyTitle">YEONJUN DISCOGRAPHY</div>
+
+          <div class="extra-image">
+            <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/403d4cd57a8d39b6b94c9fbdd4d77dca07dd703f/download%20(16).jpg" alt="Yeonjun Discography Photo">
+          </div>
+
+          <div class="sub-title" id="miniAlbumsTitle">MINI ALBUMS</div>
+          <div class="list-block" id="miniAlbumsList"></div>
+
+          <div class="sub-title" id="mixtapesTitle">MIXTAPES</div>
+          <div class="list-block" id="mixtapesList"></div>
+
+          <div class="sub-title" id="featuresTitle">FEATURES</div>
+          <div class="list-block" id="featuresList"></div>
+
+          <div class="sub-title" id="ostsTitle">OSTS</div>
+          <div class="list-block" id="ostsList"></div>
+
+          <div class="section-title" id="filmographyTitle">YEONJUN FILMOGRAPHY</div>
+
+          <div class="extra-image">
+            <img src="https://raw.githubusercontent.com/starbvoi/cobaprofile/403d4cd57a8d39b6b94c9fbdd4d77dca07dd703f/download%20(15).jpg" alt="Yeonjun Filmography Photo">
+          </div>
+
+          <div class="sub-title" id="dramasTitle">DRAMAS</div>
+          <div class="list-block" id="dramasList"></div>
+
+          <div class="sub-title" id="musicShowsTitle">MUSIC SHOWS</div>
+          <div class="list-block" id="musicShowsList"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -652,25 +719,123 @@
     const nextBtn = document.getElementById("nextBtn");
     const songTitle = document.getElementById("songTitle");
     const songArtist = document.getElementById("songArtist");
+    const quoteText = document.getElementById("quoteText");
+    const descText = document.getElementById("descText");
 
     const textData = {
       INA: {
-        title: "HYBETTER EST 2026",
-        text: "HYBETTER adalah komunitas musik yang dibangun untuk para kreator, penikmat, dan kolaborator yang ingin berkembang bersama. Kami percaya bahwa musik bukan hanya suara, tetapi juga identitas, energi, dan gerakan budaya yang bisa menyatukan banyak orang dalam satu visi.",
-        profile: "PROFILE",
-        rules: "RULES",
-        members: "MEMBER'S",
-        join: "HOW TO JOIN",
-        media: "MEDIAPARTNER"
+        title: "DANIEL ARTAJUNA PROFILE",
+        intro: "Choi Yeonjun, pesona yang tenang dengan sedikit sisi chaos di dalamnya. Di ritme itulah aku berada. Dikenal sebagai Juna, Daniel Artajuna sepenuhnya. Setiap langkahku selalu terinspirasi oleh Choi Yeonjun sebagai muse.",
+        section: "BIOGRAFI CHOI YEONJUN",
+        text: `Nama Lahir: Choi Yeonjun
+Nama Panggilan: Jjunie
+Nama Lain: Daniel Choi (Inggris), TopKey (탑키) (HI-BOYZ)
+Lahir: 13 September 1999
+Tempat Lahir: Seongbuk-gu, Seoul, Korea Selatan
+Tinggi: 181,5 cm
+Golongan Darah: A
+Zodiak: Virgo
+MBTI: ENFP
+Suka: Menghabiskan waktu bersama orang lain
+Tidak Suka: Ketumbar, tiram
+Makanan Favorit: Ramen, samgyeopsal, kalguksu, dan gukbap
+Grup: TOMORROW X TOGETHER (TXT)
+Debut Grup: 4 Maret 2019
+Agensi: BigHit Music (HYBE Labels)
+Media Sosial:
+Instagram: yawnzzn
+Pinterest: YEONJUN
+Spotify: YEONJUN`,
+        quote: "MY BEST TEAM AND FAMILY FOREVER, TXT",
+        desc: "TOMORROW X TOGETHER (Korea: 투모로우바이투게더), juga dikenal sebagai TXT, adalah boy group asal Korea Selatan yang dibentuk oleh BigHit Music, beranggotakan Soobin, Yeonjun, Beomgyu, Taehyun, dan Huening Kai. Mereka debut pada 4 Maret 2019 dengan extended play The Dream Chapter: Star. Kesuksesan album ini membawa mereka ke puncak Gaon Album Chart dan Billboard World Albums Chart, sekaligus masuk ke US Billboard Global 200. Lagu utama mereka, “Crown”, debut di peringkat 1 World Digital Songs chart, dan TXT juga memuncaki Billboard Emerging Artists chart, menjadikan mereka salah satu grup K-pop dengan perkembangan tercepat. Mereka kemudian memenangkan beberapa penghargaan Rookie of the Year, termasuk di Golden Disc Awards, Melon Music Awards, Gaon Chart Music Awards, dan Mnet Asian Music Awards pada tahun 2019.",
+
+        discographyTitle: "YEONJUN DISKOGRAFI",
+        miniAlbumsTitle: "MINI ALBUMS",
+        mixtapesTitle: "MIXTAPES",
+        featuresTitle: "FEATURES",
+        ostsTitle: "OSTS",
+        filmographyTitle: "YEONJUN FILMOGRAFI",
+        dramasTitle: "DRAMAS",
+        musicShowsTitle: "MUSIC SHOWS",
+
+        miniAlbums: [
+          "No Labels: Part 01 (2025)"
+        ],
+        mixtapes: [
+          "\"Yeonjun's Mixtape: Ggum\" (2024)"
+        ],
+        features: [
+          "ENHYPEN - \"Blockbuster\" (2021)",
+          "salem ilese - \"PS5\" (with Taehyun & Alan Walker) (2022)",
+          "KATSEYE - \"Touch\" (2024)"
+        ],
+        osts: [
+          "\"Cinderella at 2AM OST Part.4\" (\"Boyfriend\") (2024)"
+        ],
+        dramas: [
+          "Live On (2020–2021) - cameo",
+          "Resident Playbook (tvN, 2025) - TopKey"
+        ],
+        musicShows: [
+          "Inkigayo (SBS, 2022–2024) - MC"
+        ]
       },
       ENG: {
-        title: "HYBETTER EST 2026",
-        text: "HYBETTER is a music community built for creators, listeners, and collaborators who want to grow together. We believe that music is not only sound, but also identity, energy, and a cultural movement that can unite many people under one vision.",
-        profile: "PROFILE",
-        rules: "RULES",
-        members: "MEMBER'S",
-        join: "HOW TO JOIN",
-        media: "MEDIAPARTNER"
+        title: "DANIEL ARTAJUNA PROFILE",
+        intro: "Choi Yeonjun, a storm of charm with a hint of chaos beneath. You'll find me in that rhythm. Known as Juna, Daniel Artajuna in full. Every step I take is guided by Choi Yeonjun as my muse.",
+        section: "CHOI YEONJUN BIOGRAPHY",
+        text: `Birth Name: Choi Yeonjun
+Nick Name: Jjunie
+Other Name(s): Daniel Choi (English), TopKey (탑키), (HI-BOYZ)
+Born: September 13, 1999
+Birthplace: Seongbuk-gu, Seoul, South Korea
+Height: 181.5 cm
+Blood Type: A
+Zodiac: Virgo
+MBTI: ENFP
+Likes: Spending time with people
+Dislikes: Cilantro, oysters
+Favorite foods: Ramen, samgyeopsal, kalguksu, and gukbap
+Group: TOMORROW X TOGETHER (TXT)
+Group Debut: March 4, 2019
+Agency: BigHit Music (HYBE Labels)
+Social Media:
+Instagram: yawnzzn
+Pinterest: YEONJUN
+Spotify: YEONJUN`,
+        quote: "MY BEST TEAM AND FAMILY FOREVER, TXT",
+        desc: "TOMORROW X TOGETHER (Korean: 투모로우바이투게더; RR: Tumoroubaitugeteo), also known as TXT, is a South Korean boy group formed by BigHit Music, consisting of Soobin, Yeonjun, Beomgyu, Taehyun, and Huening Kai. They debuted on March 4, 2019, with their extended play The Dream Chapter: Star, whose success saw it top the Gaon Album Chart and Billboard World Albums Chart while also entering the US Billboard Global 200. Its lead single, “Crown”, debuted at No. 1 on the World Digital Songs chart, as TXT simultaneously topped Billboard’s Emerging Artists chart, marking them as one of the fastest-rising K-pop groups. They later went on to win several Rookie of the Year awards, including at the Golden Disc Awards, Melon Music Awards, Gaon Chart Music Awards, and Mnet Asian Music Awards in 2019.",
+
+        discographyTitle: "YEONJUN DISCOGRAPHY",
+        miniAlbumsTitle: "MINI ALBUMS",
+        mixtapesTitle: "MIXTAPES",
+        featuresTitle: "FEATURES",
+        ostsTitle: "OSTS",
+        filmographyTitle: "YEONJUN FILMOGRAPHY",
+        dramasTitle: "DRAMAS",
+        musicShowsTitle: "MUSIC SHOWS",
+
+        miniAlbums: [
+          "No Labels: Part 01 (2025)"
+        ],
+        mixtapes: [
+          "\"Yeonjun's Mixtape: Ggum\" (2024)"
+        ],
+        features: [
+          "ENHYPEN - \"Blockbuster\" (2021)",
+          "salem ilese - \"PS5\" (with Taehyun & Alan Walker) (2022)",
+          "KATSEYE - \"Touch\" (2024)"
+        ],
+        osts: [
+          "\"Cinderella at 2AM OST Part.4\" (\"Boyfriend\") (2024)"
+        ],
+        dramas: [
+          "Live On (2020–2021) - cameo",
+          "Resident Playbook (tvN, 2025) - TopKey"
+        ],
+        musicShows: [
+          "Inkigayo (SBS, 2022–2024) - MC"
+        ]
       }
     };
 
@@ -701,15 +866,35 @@
       return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
     }
 
+    function renderList(elementId, items) {
+      const container = document.getElementById(elementId);
+      container.innerHTML = items.map(item => `<div>- ${item}</div>`).join("");
+    }
+
     function setLanguage(lang) {
       const data = textData[lang];
       document.getElementById("siteTitle").textContent = data.title;
+      document.getElementById("introText").textContent = data.intro;
+      document.getElementById("sectionTitle").textContent = data.section;
       document.getElementById("mainText").textContent = data.text;
-      document.getElementById("btnProfile").textContent = data.profile;
-      document.getElementById("btnRules").textContent = data.rules;
-      document.getElementById("btnMembers").textContent = data.members;
-      document.getElementById("btnJoin").textContent = data.join;
-      document.getElementById("btnMedia").textContent = data.media;
+      quoteText.textContent = data.quote;
+      descText.textContent = data.desc;
+
+      document.getElementById("discographyTitle").textContent = data.discographyTitle;
+      document.getElementById("miniAlbumsTitle").textContent = data.miniAlbumsTitle;
+      document.getElementById("mixtapesTitle").textContent = data.mixtapesTitle;
+      document.getElementById("featuresTitle").textContent = data.featuresTitle;
+      document.getElementById("ostsTitle").textContent = data.ostsTitle;
+      document.getElementById("filmographyTitle").textContent = data.filmographyTitle;
+      document.getElementById("dramasTitle").textContent = data.dramasTitle;
+      document.getElementById("musicShowsTitle").textContent = data.musicShowsTitle;
+
+      renderList("miniAlbumsList", data.miniAlbums);
+      renderList("mixtapesList", data.mixtapes);
+      renderList("featuresList", data.features);
+      renderList("ostsList", data.osts);
+      renderList("dramasList", data.dramas);
+      renderList("musicShowsList", data.musicShows);
 
       langIna.classList.remove("active");
       langEng.classList.remove("active");
